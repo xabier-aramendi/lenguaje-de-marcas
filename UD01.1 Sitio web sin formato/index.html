@@ -1,9 +1,9 @@
 <!--
 Autor: Xabier Aramendi Gato
 Asignatura: LMGSI  
-Tarea: Tarea Evaluativa 1 - 1er sitio web sin formato
-Autoevaluación: https://docs.google.com/document/d/1LhrHVh4AvGPuTE2it0vQYJLGCQVdsStZ/edit?usp=sharing&ouid=100346527733604680353&rtpof=true&sd=true
-Fecha: 26/09/2025
+Tarea: Tarea Evaluativa 2 - 1er sitio web con formato
+Autoevaluación: https://docs.google.com/document/d/1sKo12yG3z4znMSD61_d7oZeSWRqHDrMy/edit?usp=sharing&ouid=100346527733604680353&rtpof=true&sd=true
+Fecha: 03/10/2025
 --> 
 
 <!DOCTYPE html>
@@ -12,41 +12,72 @@ Fecha: 26/09/2025
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum vitae</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <style>
+      li {
+        color: rgb(20, 20, 20);
+      }
+    </style>
 </head>
 <body>
-    <!-- Encabezado principal de la página -->
-    <h1>Curriculum vitae</h1>
-    <!-- Imagen de perfil del autor con atributos "alt" (texto alternativo) y "title" (texto emergente) -->
-    <img src="./recursos/avatar.jpg" title="avatar de Xabi" alt="Imagen de perfil de Xabi" width="200" height="200">
-    <!-- Tabla con información personal -->
-    <table>
-      <!-- caption: título descriptivo de la tabla -->
-      <caption>Datos personales</caption>
-      <tr>
-        <th>Nombre</th>
-        <td>Xabier</td>
-      </tr>
-      <tr>
-        <th>Apellido</th>
-        <td>Aramendi</td>
-      </tr>
-      <tr>
-        <th>Teléfono</th>
-        <td>675577855</td>
-      </tr>
-      <tr>
-        <th>Mail</th>
-        <td>xaramendi@birt.eus</td>
-      </tr>
-    </table>
-    <!-- Lista no ordenada con enlaces de navegación a las otras páginas del sitio -->
-    <ul>
+    <ul class="menu">
+       <!-- La clase "menu" afecta al contenedor de la lista:
+       - Le da color de fondo (beige)
+       - Define márgenes y padding
+       - Permite que los <li> se presenten horizontalmente si se combina con estilos de display -->
+      <li class="menuItem"><a href="./index.html" target="_self">Home</a></li>
       <!-- target="_self" indica que el enlace se abrirá en la misma pestaña -->
-      <li><a href="./experiencia-academica.html" target="_self">Experiencia académica</a></li>
-      <li><a href="./experiencia-laboral.html" target="_self">Experiencia laboral</a></li>
-      <li><a href="./aficiones.html" target="_self">Aficiones</a></li>
+      <li class="menuItem"><a href="./experiencia-academica.html" target="_self">Experiencia académica</a></li>
+      <li class="menuItem"><a href="./experiencia-laboral.html" target="_self">Experiencia laboral</a></li>
       <!-- Enlace externo a otra web. target="_blank" abre en nueva pestaña -->
-      <li><a href="https://www.xabieraramendi.eus/" target="_blank">Aficiones</a></li>
-    </ul>    
+      <li class="menuItem"><a href="https://www.xabieraramendi.eus/" target="_blank">Portfolio</a></li>
+    </ul>   
+
+    <!-- Encabezado principal de la página -->
+     <!-- La clase "contenido" afecta al contenedor principal:
+       - Le da un fondo diferente (aliceblue)
+       - Define bordes redondeados y borde sólido
+       - Añade padding interno para separar el contenido del borde
+       - Centra el bloque usando margen automático 
+       -->
+    <div class="contenido">
+      <!-- Imagen de perfil del autor con atributos "alt" (texto alternativo) y "title" (texto emergente) 
+       -->
+      <!-- La clase "avatarImage" afecta a la imagen:
+       - Hace que la imagen sea circular con border-radius
+       - Define tamaño fijo (alto y ancho)
+       - Centra la imagen horizontalmente (display:block + margin:auto) 
+       -->
+      <img class="avatarImage" src="./recursos/avatar.jpg" title="avatar de Xabi" alt="Imagen de perfil de Xabi">  
+      <div class="contenedorTitle">
+            <h1 class="title">Kaixo, ongi etorri</h1>
+      </div>        
+        <!-- Tabla con información personal -->
+      <div class="marcoTabla">  
+        <table>
+          <!-- caption: título descriptivo de la tabla -->
+          <!-- atributo style aplicado en la etiqueta HTML en linea -->
+          <caption style="color: rgb(9, 9, 59);">Datos personales</caption>
+          <tr>
+            <th>Nombre</th>
+            <td>Xabier</td>
+          </tr>
+          <tr>
+            <th>Apellido</th>
+            <td>Aramendi</td>
+          </tr>
+          <tr>
+            <th>Teléfono</th>
+            <td>675577855</td>
+          </tr>
+          <tr>
+            <th>Mail</th>
+            <td>xaramendi@birt.eus</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+      <!-- Lista no ordenada con enlaces de navegación a las otras páginas del sitio -->
+        
 </body>
 </html>

@@ -4,26 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencia académica</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body>
-    <a href="./recursos/CV_AramendiXabier_EN_2025.pdf" download>Descargar Curriculum vitae</a>
-    <a href="./index.html">Volver</a>
-    <h1>Experiencia académica</h1>
-    <h2>Estudios</h2>
-    <ol>
-        <li>Industrial Design and Product Development Engineer Degree at Mondragon University</li>
-        <li>Design and Development of New Flush-mounted Button Panel (FYP at Orona IDEO)</li>
-        <li>Master's degree in Strategic Design of Products and Services with UX/UI specialization</li>
-        <li>Conceptualization of a Personal Gambler's Area in the Betting Terminal (Thesis at Kirolsoft)</li>
-    </ol>
-    <h2>Cursos</h2>
-    <ol>
-        <li>Scalable design systems with design tokens for multiple brands</li>
-        <li>Creation and management of accessible and scalable design systems over time</li>
-        <li>Behavioral Design Course with Dani Solana at The Behavioral School</li>
-        <li>Google Analytics Course at Mondragon University</li>
-        <li>Design System Course at Tramontana
-</li>
-    </ol>
+    <nav>
+        <ul class="menu">
+        <li class="menuItem"><a href="./index.html" target="_self">Home</a></li>
+        <!-- target="_self" indica que el enlace se abrirá en la misma pestaña -->
+        <li class="menuItem "><a href="./experiencia-academica.html" target="_self">Experiencia académica</a></li>
+        <li class="menuItem"><a href="./experiencia-laboral.html" target="_self">Experiencia laboral</a></li>
+        <!-- Enlace externo a otra web. target="_blank" abre en nueva pestaña -->
+        <li class="menuItem"><a href="https://www.xabieraramendi.eus/" target="_blank">Portfolio</a></li>
+        </ul>
+    </nav>
+    
+    <!-- La clase "nav-back" afecta al contenedor del enlace de navegación:
+         - Muestra el bloque como inline-block
+         - Bordes redondeados y borde visible
+         - Márgenes para separar el enlace del resto del contenido -->
+    <nav class="nav-back">
+        <p><a href="./index.html">Volver</a></p>
+    </nav>
+    
+    <div class="breadcrumb">
+        
+    </div>    
+    
+    <div class="contenido">
+        <h1>Experiencia académica</h1>
+        <h2>Estudios</h2>
+        <ol>
+            <li><b>Design and Product Development</b> Engineer Degree at Mondragon University</li>
+            <li><b>Design and Development</b> of New Flush-mounted Button Panel (FYP at Orona IDEO)</li>
+            <li>Master's degree in <b>Strategic Design of Products and Services</b> with UX/UI specialization</li>
+            <li>Conceptualization of a <b>Personal Gambler's Area</b> in the Betting Terminal (Thesis at Kirolsoft)</li>
+        </ol>
+        <h2>Cursos</h2>
+        <ol>
+            <li>Scalable <b>design systems</b> with design tokens for multiple brands</li>
+            <li>Creation and management of accessible and scalable design systems over time</li>
+            <li><b>Behavioral Design</b> Course with Dani Solana at The Behavioral School</li>
+            <li><b>Google Analytics</b> Course at Mondragon University</li>
+            <li><b>Design System</b> Course at Tramontana</li>
+            <li><a href="./recursos/CV_AramendiXabier_EN_2025.pdf" download>Descargar Curriculum vitae</a></li>      
+        </ol>
+    </div>
+
 </body>
 </html>

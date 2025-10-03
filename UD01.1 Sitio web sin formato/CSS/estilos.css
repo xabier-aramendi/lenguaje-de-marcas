@@ -1,0 +1,120 @@
+/* 
+  body:
+  - Objetivo: Establecer un estilo base para toda la página.
+  - Se aplica al elemento <body>, afectando márgenes, fondo y fuente predeterminada.
+*/
+
+body {
+    margin: 0px 0px;
+    background-color: rgb(204, 168, 148);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu {
+    background-color: beige;
+    margin: 0px;
+    padding: 16px 8px;
+}
+
+/* 
+  li:
+  - Objetivo: Mostrar los elementos de la lista horizontalmente.
+  - Se aplica a los elementos <li> dentro del menú.
+*/
+
+li {
+    display: inline-block;
+}
+
+.menuItem {
+    padding: 4px 8px;
+    font-size: 14px;
+    color: black;
+    line-height: 16px;
+}
+
+
+
+.menuItem a {
+    color: rgb(34, 19, 6);
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.contenido {
+    background-color: aliceblue;
+    margin: 24px auto;
+    width: fit-content;
+    border-radius: 16px;
+    padding: 24px 24px;
+    border: 2px solid #ffffff;
+}
+
+.contenedorTitle {
+    display: block;
+}
+
+/* 
+  h1:
+  - Objetivo: Estilizar el título principal.
+  - Se aplica a todos los <h1>, centrando el texto y ajustando padding y margen.
+*/
+
+h1 {
+    display: block;
+    text-align: center;
+    padding: 8px 0px;
+    margin: 0px;
+    width: fit-content;
+    
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    padding: 8px 0px;
+    margin: 0px;
+    
+}
+
+ol {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-back {
+    display: inline-block;
+    margin: 24px 0 0 16px;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+}
+
+p a {
+    padding: 4px 16px;
+    font-size: 14px;
+    color: black;
+    line-height: 8px;
+    text-decoration: none;
+    
+}
+
+.avatarImage {
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+.marcoTabla {
+    border: 2px solid #ffffff;
+    background-color: rgb(180, 220, 255);
+    border-radius: 12px;
+    padding: 8px;
+}

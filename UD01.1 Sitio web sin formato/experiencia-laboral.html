@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencia laboral</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body>
-    <a href="https://drive.google.com/file/d/1Ys9oMVdc6dCFyAxclIpc_gBw3XfRi1qQ/view?usp=sharing">Descargar Curriculum vitae</a>
-    <a href="./index.html">Volver</a>
-    <h1>Experiencia laboral</h1>
-    <ol>
-        <li>UX/UI Designer at KIROLSOFT (Kirolbet,Juegging, Apuestas Valor, Apuestas de Murcia and Apuestas de Andalucia) for betting terminals</li>
-        <li>UX/UI Designer at Emphasys in the Software Development Dep. - Global Training, Nicosia (Cyprus)</li>
-        <li>Reviewer and Prototyper of Digital Solutions at Orona IDEO in the Digital Transformation Department</li>
-        <li>Administrative Technical Assistant at Alecop Knowledge and Technology</li>
-    </ol>
+    <ul class="menu">
+        <!-- La clase "menu" afecta al contenedor de la lista:
+       - Fondo beige, padding y márgenes
+       - Distribución horizontal de los <li> si se combina con display: inline-block -->
+      <li class="menuItem"><a href="./index.html" target="_self">Home</a></li>
+      <!-- target="_self" indica que el enlace se abrirá en la misma pestaña -->
+       <!-- La clase "menuItem" afecta cada elemento de la lista:
+         - Padding interno
+         - Tamaño de fuente y color
+         - Altura de línea
+         - Mejora la estética y legibilidad del menú -->
+      <li class="menuItem"><a href="./experiencia-academica.html" target="_self">Experiencia académica</a></li>
+      <li class="menuItem"><a href="./experiencia-laboral.html" target="_self">Experiencia laboral</a></li>
+      <!-- Enlace externo a otra web. target="_blank" abre en nueva pestaña -->
+      <li class="menuItem"><a href="https://www.xabieraramendi.eus/" target="_blank">Portfolio</a></li>
+    </ul>
+    
+    <!-- La clase "nav-back" afecta al contenedor del enlace de navegación:
+         - Muestra el bloque como inline-block
+         - Bordes redondeados y borde visible
+         - Márgenes para separar el enlace del resto del contenido -->
+    <nav class="nav-back">
+        
+        <p><a href="./index.html">Volver</a></p>
+    </nav>
+    
+    <div class="contenido">
+        <h1>Experiencia laboral</h1>
+        <ol>
+            <li><b>UX/UI Designer </b><small>KIROLSOFT (Kirolbet,Juegging, Apuestas Valor, Apuestas de Murcia and Apuestas de Andalucia) for betting terminals</small></li>
+            <li><b>UX/UI Designer </b><small>Emphasys in the Software Development Dep. - Global Training, Nicosia (Cyprus)</small></li>
+            <li><b>Reviewer and Prototyper </b> of Digital Solutions <small>Orona IDEO in the Digital Transformation Department</small></li>
+            <li><b>Administrative Technical Assistant</b><small> Knowledge and Technology </small></li>
+        </ol>
+    </div>
+    
 </body>
 </html>
